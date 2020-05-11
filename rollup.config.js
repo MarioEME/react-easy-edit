@@ -16,6 +16,7 @@ export default {
     uglify()
   ],
   output: {
+    exports: 'named',
     format: 'umd',
     name: 'react-easy-edit',
     globals: {

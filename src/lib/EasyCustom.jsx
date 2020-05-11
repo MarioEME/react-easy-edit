@@ -11,7 +11,7 @@ export default class EasyCustom extends Component {
 
   setValue(value) {
     this.setState({
-      value
+      value:value
     }, () => this.props.setValue(value));
   }
 
@@ -22,7 +22,7 @@ export default class EasyCustom extends Component {
       React.Children.only(children),
       {
         setParentValue: this.setValue,
-        value
+        value: value
       }
     );
     return (
